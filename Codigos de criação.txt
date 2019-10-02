@@ -1,0 +1,15 @@
+mkdir react
+npm init -y
+code .
+npm config set proxy http://proxy.monte.ufu.br:3128
+npm i webpack-cli webpack webpack-dev-server -D
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react -D
+
+Criar pasta “src”
+Criar arquivo “index.js”
+
+Em package.json adicionar na aba “scripts”:
+	“start”: “webpack --mode development”,
+	“build”: “webpack --mode production”
+E remover a tag “test”.
+
